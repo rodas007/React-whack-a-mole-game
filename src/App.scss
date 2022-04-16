@@ -1,0 +1,85 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(200, 199, 196);
+}
+body {
+ background-image: url("./assets/background.png");
+  display: flex;
+  margin-top: 24px;
+}
+
+.table {
+  margin: 24px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 34%;
+  height: 40%;
+  gap: 4px;
+}
+
+.c-score {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #de9250;
+  text-shadow: 0px 0px 2px rgb(222, 224, 224);
+  margin: 2px;
+}
+
+button {
+  margin: 14px;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #10b723, #b27d50, #f2ac6d, #9be651);
+  background-size: 800% 400%;
+  padding: 1em 2em;
+  display: inline-block;
+  border: none;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #513b21;
+  transition: all 0.5s ease-in-out;
+  animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+  width: 180px;
+}
+
+button:hover {
+  animation: gradient 3s infinite;
+  transform: scale(1.05);
+}
+
+button:active {
+  animation: gradient 3s infinite;
+  transform: scale(0.8);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.c-green {
+  color: rgb(14, 170, 79);
+}
+
+.c-red {
+  color: red;
+}
+
+@media only screen and (max-device-width: 500px) {
+  .table {
+    width: 70%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+.c-square {
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  
+  cursor: crosshair;
+ 
+  object-fit: contain;
+}
+
+@media only screen and (max-device-width: 500px) {
+  .c-square {
+    padding-top: 55px;
+    width: 93px;
+    height: 100px;
+  }
+}
